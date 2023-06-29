@@ -1,0 +1,226 @@
+CREATE TABLE tabla_a(
+	id NUMBER(10),
+	nombre VARCHAR(50),
+	precio NUMBER(10),
+	num_tipo NUMBER(10),
+	num_mar NUMBER(10));
+CREATE TABLE tabla_b(
+	id_tipo NUMBER(10),
+	tipo VARCHAR(50));
+CREATE TABLE tabla_c(
+	id NUMBER(10),
+	marca VARCHAR(50));
+
+	--Tabla extra--
+CREATE TABLE tabla_d(
+dato VARCHAR (100));
+	--Tabla extra--
+	
+	
+	--Drop--
+DROP TABLE tabla_a;
+DROP TABLE tabla_b;
+DROP TABLE tabla_c;
+DROP TABLE tabla_d;
+	--Drop--
+	
+	
+	-- num_tipo: 1=comida, 2=frituras, 3=agua, 4=postres--
+	-- num_mar: 1=cafeteria, 2=sabritas, 3=barcel, 4=bimbo 5=bonafont 6=epura 7=cocacola 8=dulces--
+	--Datos tabla_a, datos cafeteria--
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (001, 'Torta de milanesa', 35, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (002, 'Torta cubana', 35, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (003, 'Torta de salchica', 35, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (004, 'Torta de pierna', 35, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (005, 'Torta hawaiana', 35, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (006, 'Torta de pollo', 35, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (007, 'Torta de choriqueso', 35, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (008, 'Torta de huevo', 35, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (009, 'Torta de pastor', 35, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (010, 'Torta de suadero', 35, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (011, 'Sandwitch', 15, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (012, 'Maruchan', 15, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (013, 'Nachos', 25, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (014, 'Cuernito de jamón', 25, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (015, 'Sincronizada', 25, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (016, 'Molletes, 30, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (017, 'Burrito de suadero', 40, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (018, 'Burrito de pastor', 40, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (019, 'Burrito de pollo', 40, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (020, 'Burrito hawaiano', 40, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (021, 'Burrito de choriqueso', 40, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (022, 'Hamburguesa sencilla', 30, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (023, 'Hamburguesa doble', 50, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (024, 'Hamburguesa hawaiana', 35, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (025, 'Papas a la francesa', 30, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (026, 'HotDogs', 30, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (027, 'Quesadillas', 30, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (028, 'Gordita de chicharron', 20, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (029, 'Gordita de suadero', 25, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (030, 'Pambazo', 25, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (031, 'Sope sencillo', 25, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (032, 'Sope combinado', 35, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (033, 'Sope de pastor', 30, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (034, 'Sope de pollo', 30, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (035, 'Nachos con carne', 35, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (036, 'Chilaquiles', 30, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (037, 'Tacos dorados', 30, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (038, 'Ensalada', 30, 1, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (039, 'Rebanada de pastel', 30, 4, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (040, 'Rebanada de pay', 30, 4, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (041, 'Paletas heladas', 15, 4, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (042, 'Fresas preparadas', 25, 4, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (043, 'Cereal', 20, 4, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (044, 'Coctel de frutas', 30, 4, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (045, 'Cereal con yogurt', 25, 4, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (046, 'Gelatina', 20, 4, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (047, 'Agua natural', 15, 3, 5);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (048, 'Agua natural', 15, 3, 6);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (049, 'Agua de limón', 18, 3, 5);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (050, 'Agua de guayaba', 18, 3, 5);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (051, 'Agua de piñacolada', 18, 3, 5);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (052, 'Agua de fresa', 18, 3, 5);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (053, 'Jarrito', 18, 3, 7);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (054, 'CocaCola', 20, , 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (055, 'Fanta', 18, 3, 7);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (056, 'Sprite', 18, 3, 7);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (058, 'Sidral Mundet', 18, 3, 7);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (059, 'Fuze Tea', 20, 3, 7);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (060, 'Fresca', 18, 3, 7);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (061, 'Té artesanal', 20, 3, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (062, 'Café artesanal', 20, 3, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (063, 'Café', 15, 3, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (064, 'Licuado', 20, 3, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (065, 'Frappe', 40, 3, 1);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (066, 'Gomitas', 25, 2, 8);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (067, 'Carlos V', 15, 2, 8);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (068, 'Lunetas', 25, 2, 8);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (069, 'Paletas', 3, 2, 8);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (070, 'Conchas', 30, 4, 4);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (071, 'Roles', 30, 4, 4);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (072, 'Takis', 18, 2, 3);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (073, 'Runners', 18, 2, 3);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (074, 'Chips', 20, 2, 3);
+INSERT INTO tabla_a (id, nombre, precio, num_tipo, num_mar) VALUES (075, 'Rufles', 20, 2, 2);
+	--Datos tabla_a, datos de cafeteria--
+	
+	--Datos tabla_b, datos que no se encuentran en cafeteria--
+INSERT INTO tabla_b (id_tipo, tipo) VALUES (sec_incremento_id.newtval, 'Alcohol');
+INSERT INTO tabla_b (id_tipo, tipo) VALUES (sec_incremento_id.newtval, 'Cigarros');
+INSERT INTO tabla_b (id_tipo, tipo) VALUES (sec_incremento_id.newtval, 'Herramienta');
+INSERT INTO tabla_b (id_tipo, tipo) VALUES (sec_incremento_id.newtval, 'Libros');
+INSERT INTO tabla_b (id_tipo, tipo) VALUES (sec_incremento_id.newtval, 'Electrónicos');
+	--Datos tabla_b, datos que no se encuentran en cafeteria--
+	
+	--Datos tabla_c, datos que no se encuentran en cafeteria--
+INSERT INTO tabla3 (Id_marca, Marca) VALUES (sec_incremento_ids.newtval, 'Oso negro');
+INSERT INTO tabla3 (Id_marca, Marca) VALUES (sec_incremento_ids.newtval, 'Malvoro');
+INSERT INTO tabla3 (Id_marca, Marca) VALUES (sec_incremento_ids.newtval, 'Trupper');
+INSERT INTO tabla3 (Id_marca, Marca) VALUES (sec_incremento_ids.newtval, 'Porrua');
+INSERT INTO tabla3 (Id_marca, Marca) VALUES (sec_incremento_ids.newtval, 'Nvidia');
+	--Datos tabla_c, datos que no se encuentran en cafeteria--
+	
+	--Secuencia para incremento--
+CREATE SEQUENCE sec_incremento_id
+	START WITH 1
+	INCREMENT BY 1
+	MAXVALUE 100
+	MINVALUE 1;
+	--Secuencia para incremento--
+	
+	
+	--Creación de Trigger para tabla_b--
+CREATE OR REPLACE TRIGGER tr_b
+	BEFORE INSERT on tabla_a
+	FOR EACH ROW
+	BEGIN 
+IF: new.num_tipo = 1 THEN
+	INSERT INTO tabla_b values (sec_incremento_id.nextval, 'Comida');
+END IF;
+IF: new.num_tipo = 2 THEN
+	NSERT INTO tabla_b values (sec_incremento_id.nextval, 'Frituras');
+END IF;
+IF: new.num_tipo = 3 THEN
+	NSERT INTO tabla_b values (sec_incremento_id.nextval, 'Agua');
+END IF;
+IF: new.num_tipo = 4 THEN
+	NSERT INTO tabla_b values (sec_incremento_id.nextval, 'Postres');
+END IF;
+
+	DROP TRIGGER tr_b;
+	--Creación de Trigger para tabla_b--
+	
+	
+	--Secuencia para incremento--
+CREATE SEQUENCE sec_incremento_ids
+	START WITH 1
+	INCREMENT BY 1
+	MAXVALUE 100
+	MINVALUE 1;
+	--Secuencia para incremento--
+
+	--Creación de Trigger para tabla_b--
+CREATE OR REPLACE TRIGGER tr_c
+	BEFORE INSERT on tabla_a
+	FOR EACH ROW 
+	BEGIN
+IF: new.num_mar = 1 THEN
+INSERT INTO tabla_c values (sec_incremento_ids.nextval, 'Cafeteria');
+END IF;
+IF: new.num_mar = 2 THEN
+INSERT INTO tabla_c values (sec_incremento_ids.nextval, 'Sabritas');
+END IF;
+IF: new.num_mar = 3 THEN
+INSERT INTO tabla_c values (sec_incremento_ids.nextval, 'Barcel');
+END IF;
+IF: new.num_mar = 4 THEN
+INSERT INTO tabla_c values (sec_incremento_ids.nextval, 'Bimbo');
+END IF;
+IF: new.num_mar = 5 THEN
+INSERT INTO tabla_c values (sec_incremento_ids.nextval, 'Bonafont');
+END IF;
+IF: new.num_mar = 6 THEN
+INSERT INTO tabla_c values (sec_incremento_ids.nextval, 'Epura');
+END IF;
+IF: new.num_mar = 7 THEN
+INSERT INTO tabla_c values (sec_incremento_ids.nextval, 'Cocacola');
+END IF;
+IF: new.num_mar = 8 THEN
+INSERT INTO tabla_c values (sec_incremento_ids.nextval, 'Dulces');
+END IF;
+	--Creación de Trigger para tabla_b--
+
+	--Creación de Trigger de producto con vitamina T--
+CREATE OR REPLACE TRIGGER tr_d
+BEFORE INSERT
+ON tabla_a
+FOR EACH ROW
+WHEN (new.nombre like 'T%')
+BEGIN
+INSERT INTO tabla_d values ('Se insertó un producto con la vitamina T con el nombre: ' || :new.nombre);
+END tr_d;
+	--Creación de Trigger de producto con vitamina T--
+	
+	--CREACIÓN DE JOINS--
+SELECT nombre, precio, tipo, marca FROM tabla_a full JOIN tabla_b.tipo ON id_tipo = num_tipo
+FULL JOIN tabla_c ON id_marca = num_mar;
+
+SELECT * FROM tabla_a INNER JOIN tabla_c ON marca = 'Cafeteria' WHERE id_marca = num_mar;
+
+SELECT * FROM tabla_1 LEFT JOIN tabla_b ON id_tipo = num_tipo WHERE id IS NULL;
+
+SELECT * FROM tabla_a RIGHT JOIN tabla_c on id_marca = num_mar;
+
+SELECT * FROM tabla_a FULL JOIN tabla_b.tipo ON Id_tipo = num_tipo  
+FULL JOIN tabla_c ON id_marca = num_mar WHERE id IS NULL;
+
+SELECT * FROM tabla_a FULL tabla_b ON id_tipo = num_tipo 
+FULL JOIN tabla_c ON id_marca = num_marca WHERE nombre like 'T%';
+	--CREACIÓN DE JOINS--
+
+-----------------------------------
+CREATE OR REPLACE VIEW productos AS
+SELECT nombre, marca FROM tabla_a FULL JOIN tabla_c ON id_marca = num_mar;
+
+SELECT * FROM productos;
+-----------------------------------
